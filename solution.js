@@ -6,7 +6,6 @@ const getNonConstructibleChange = (input) => {
   coins.forEach((coint) => {
     const aimedChange = currentChange + 1;
 
-    console.log(coint, currentChange, aimedChange);
     if (coint > aimedChange) return aimedChange;
     
     currentChange += coint;
