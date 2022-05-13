@@ -6,6 +6,7 @@ const getNonConstructibleChange = (input) => {
   coins.forEach((coint) => {
     const aimedChange = currentChange + 1;
 
+    console.log(coint, currentChange, aimedChange);
     if (coint > aimedChange) return aimedChange;
     
     currentChange += coint;
@@ -14,7 +15,8 @@ const getNonConstructibleChange = (input) => {
   return currentChange + 1;
 };
 
-console.log(getNonConstructibleChange([1, 5, 1, 1, 1, 10, 15, 20, 100]));
+const coins = [5, 7, 1, 1, 2, 3, 22];
+console.log(getNonConstructibleChange(coins));
 
 const getSortedSquaredArray = (input) => {
   /*
@@ -45,4 +47,6 @@ const getSortedSquaredArray = (input) => {
   
   return result;
 };
-console.log(getSortedSquaredArray([-10, -5, 0, 5, 10]));
+
+const numbers = [-2, -1];
+console.log(getSortedSquaredArray(numbers));
